@@ -1,0 +1,187 @@
+
+/* Variáveis CSS */
+
+:root{
+    --color-main: rgb(0, 136, 255);
+    --font-standerd: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* fonte padrão */
+    --color-negative: red;
+    --color-black: black;
+    --color-white: white;
+    --border-radius-20px: 20px;
+    --border-radius-10px: 10px;
+}
+
+.block-intruction{
+    margin-left: 3rem;
+    font-size: 2.3rem;  
+    padding: 5rem;
+    border-radius: var(--border-radius-20px);
+    background-color: var(--color-white);
+    height: auto;
+    width: auto;
+    font-family: var(--font-standerd);
+}
+
+
+
+li{
+    margin-bottom: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-size: 62.5%;
+}
+
+
+/* Definindo as settings das letras e títulos */
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 4.5rem;
+    font-family: var(--font-standerd);
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: 30px;
+    font-family: var(--font-standerd);
+}
+
+div{
+    font-size: 30px;
+}
+
+/* Criando a estrutura do site */
+
+.conteiner{
+    background-color: var(--color-main);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-content{
+    position: relative;
+    padding: 10px;
+    height: 70rem;
+    width: 50rem;
+    border-radius: 15px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.display{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+    height: 11.5rem;
+    border-radius: var(--border-radius-10px);
+    font-size: 5rem;
+}
+
+
+.grid-content{
+    padding: 6px 6px 6px 6px;
+    bottom: 10px;
+    position: absolute;
+    height: 55rem;
+    width: 95%;
+    background: black;
+    gap: 1rem;
+    display: grid;
+    border-radius: var(--border-radius-10px);
+    grid-template-columns: 10rem 10rem 10rem 13rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem 9rem;
+    grid-template-areas:
+    'n7 n8 n9 numero_X'
+    'n4 n5 n6 excluindo'
+    'n1 n2 n3 armazenar'
+    'n n n apagar'
+    'igual igual igual igual'
+}
+
+
+.grid-content button:nth-child(1){
+    grid-area: n;
+}
+
+.grid-content button:nth-child(2){
+    grid-area: n1;
+}
+
+.grid-content button:nth-child(3){
+    grid-area: n2;
+}
+
+.grid-content button:nth-child(4){
+    grid-area: n3;
+}
+
+.grid-content button:nth-child(5){
+    grid-area: n4;
+}
+
+.grid-content button:nth-child(6){
+    grid-area: n5;
+}
+
+.grid-content button:nth-child(7){
+    grid-area: n6;
+}
+
+.grid-content button:nth-child(8){
+    grid-area: n7;
+}
+
+.grid-content button:nth-child(9){
+    grid-area: n8;
+}
+
+.grid-content button:nth-child(10){
+    grid-area: n9;
+}
+
+.grid-content button:nth-child(11){
+    grid-area: apagar;
+}
+
+.grid-content button:nth-child(12){
+    grid-area: igual;
+}
+
+.grid-content button:nth-child(13){
+    grid-area: armazenar;
+}
+
+.grid-content button:nth-child(14){
+    grid-area: excluindo;
+}
+
+.grid-content button:nth-child(15){
+    grid-area: numero_X;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-10px);
+    font-size: 20px;
+    font-family: var(--font-standerd);
+}
+
+button:hover{
+    color: rgb(98, 98, 98);
+    background: rgb(207, 207, 207);
+    cursor: pointer;
+    transition: 0.5s;
+}
