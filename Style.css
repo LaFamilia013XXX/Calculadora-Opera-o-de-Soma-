@@ -186,10 +186,10 @@ button:hover{
     transition: 0.5s;
 }
 
-
 @media (max-width: 1080px){
     .conteiner{
         display: block;
+        height: 150vh;
     }
     .conteiner-content{
         margin: 0 auto;
