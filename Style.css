@@ -186,15 +186,23 @@ button:hover{
     transition: 0.5s;
 }
 
+
+
 @media (max-width: 1080px){
     .conteiner{
+        background: white;
         display: block;
         height: 150vh;
     }
     .conteiner-content{
         margin: 0 auto;
+        background: rgb(176, 176, 176);
     }
     .block-intruction{
         margin-top: 3rem;
+    }
+    .display{
+        background: rgb(46, 46, 46);
+        color: white;
     }
 }
