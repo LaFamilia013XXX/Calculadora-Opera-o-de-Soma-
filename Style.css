@@ -185,3 +185,16 @@ button:hover{
     cursor: pointer;
     transition: 0.5s;
 }
+
+
+@media (max-width: 1080px){
+    .conteiner{
+        display: block;
+    }
+    .conteiner-content{
+        margin: 0 auto;
+    }
+    .block-intruction{
+        margin-top: 3rem;
+    }
+}
